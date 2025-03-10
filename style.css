@@ -986,12 +986,7 @@ input[type="text"]:focus {
         padding: 20px;
     }
 
-    #app {
-        width: 100%;
-        text-align: center;
-        overflow: hidden;
-        word-wrap: break-word;
-    }
+   
 }
 
 /* 📺 Tablets (768px - 1024px) */
