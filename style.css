@@ -970,11 +970,8 @@ input[type="text"]:focus {
     }
 
     .quiz-container {
-        max-width: 95%;
-        width: 90%;
-        margin: 10px;
-        text-align: center;
-        overflow: hidden;
+        max-width: 100%;
+        padding:20px;
         word-wrap: break-word;
         white-space: normal;
     }
