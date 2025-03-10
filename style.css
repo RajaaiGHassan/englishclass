@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #9b111e;
+    /* Deep Burgundy */
+    --secondary-color: #0A0E33;
+    /* Deep Navy */
+    --background: #F5F1E3;
+    /* Vintage Cream */
+    --text-color: #2E2E2E;
+    /* Dark Grey for readability */
+    --accent-color: #D4AF37;
+    /* Gold accents */
+    --border-radius: 5px;
+    --shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Raleway', serif;
+    background: var(--background);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Center Container */
+.audio-text-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    font-size: 80px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-family: 'Raleway', serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 4%;
+    margin-top: 8%;
+    /* Space between No.16 and Image */
+}
+
+
+h2::before {
+    content: none;
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    display: block;
+    letter-spacing: -2px;
+    font-family: 'Raleway', serif;
+    margin-bottom: 10px;
+}
+
+/* Image Stays Below */
+.story-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 4px solid var(--secondary-color);
+    padding: 5px;
+    background: white;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    margin: 3%;
+}
+
+.story-image:hover {
+    transform: scale(1.02) rotate(-1deg);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D Text Container */
+.text-container {
+    font-size: 25px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    max-width: 80%;
+
+    padding: 15px;
+    background: var(--secondary-color);
+    color: var(--background);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease-in-out;
+}
+
+.text-container:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Retro Highlight */
+.highlight {
+    background: var(--accent-color);
+    color: #2E2E2E;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Vintage Cards */
+/* General Page Styles */
+
+
+.images-container {
+    background-color: #FFEBCD;
+    /* Warm, vintage tone */
+    background-image: radial-gradient(#D2691E 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding: 40px;
+}
+
+/* Flex container for the images */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Image styling with bold borders and subtle drop shadow */
+.audio-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 4px solid #000;
+    /* Bold black border for a mod look */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+/* Hover effect with a pop of vivid 60s-inspired color */
+.audio-image:hover {
+    transform: scale(1.1);
+    border-color: #9b111e;
+    /* Vivid orange pop */
+}
+
+
+.audio-image.playing {
+    border: 10px solid #9b111e;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Retro Buttons */
+button {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background: var(--background);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: var(--shadow);
+}
+
+button:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0px rgba(155, 17, 30, 0.5);
+}
+
+/* Vintage Exercise Section */
+.exercise-section {
+    display: none;
+    opacity: 0;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background: var(--background);
+    border: 3px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    transition: opacity 0.3s ease-in-out;
+    text-align: left;
+}
+
+/* Retro Form Elements */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+    background: white;
+    color: black;
+    outline: none;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type="text"]:focus {
+    background: #EAEAEA;
+}
+
+/* Score Display */
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Smooth fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in-out 0.6s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Highlight the sentence while playing */
+.highlight-sentence {
+    background-color: #ffffff;
+    /* Light yellow background */
+    border-radius: 5px;
+    padding: 2px;
+    color: var(--secondary-color);
+    /* Deep Navy text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 📖 Vintage Flashcards */
+/* 📖 Vintage Flashcards */
+
+.flashcards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.flashcard {
+    width: 220px;
+    height: 250px;
+    background: var(--background);
+    border: 3px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    perspective: 1000px;
+}
+
+.flashcard .front,
+.flashcard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    /* This prevents mirroring issues */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Front Side (Word) */
+.flashcard .front {
+    background: var(--secondary-color);
+    color: var(--background);
+    border-radius: var(--border-radius);
+}
+
+/* Back Side (Definition & Example) */
+.flashcard .back {
+    background: var(--primary-color);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: var(--border-radius);
+}
+
+/* Flip the card */
+.flashcard.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.flashcard.flipped .back {
+    transform: rotateY(0);
+}
+
+
+
+
+
+
+/* 📖 Styled Exercises Section */
+.exercises-container {
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    background: var(--background);
+    border: 5px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    transition: opacity 0.3s ease-in-out;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styled Headings for Exercises */
+.exercises-container h3 {
+    font-size: 26px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Score Display */
+#score {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Questions */
+.exercises-container p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+/* Radio Buttons & Multiple Choice */
+.exercises-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.exercises-container li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* Ordering Events Inputs */
+.exercises-container input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+    background: white;
+    color: black;
+    outline: none;
+}
+
+/* Submit Button */
+#submitBtn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background: var(--background);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: var(--shadow);
+}
+
+#submitBtn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0px rgba(155, 17, 30, 0.5);
+}
+
+/* 🏆 Two-Column Word Matching */
+.matching-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.words-container,
+.definitions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Word & Definition Boxes */
+.word-box,
+.definition-box {
+    width: 250px;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--primary-color);
+    background: var(--background);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: grab;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Words Styling */
+.word-box {
+    background: var(--secondary-color);
+    color: var(--background);
+}
+
+/* Definitions Styling */
+.definition-box {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Hover Effect */
+.word-box:hover,
+.definition-box:hover {
+    transform: scale(1.05);
+}
+
+/* Correct & Incorrect Match Colors */
+.correct-match {
+    background: var(--accent-color) !important;
+    color: var(--text-color) !important;
+}
+
+.incorrect-match {
+    background: #ff6b6b !important;
+    color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spacer {
+    margin: 20px auto;
+    /* Centered with spacing */
+    padding: 25px;
+    border-radius: var(--border-radius);
+    background: wheat;
+    border: 3px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    text-align: center;
+    max-width: 80%;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styled Header inside Spacer */
+.spacer h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Raleway', serif;
+    letter-spacing: 2px;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.spacer:hover {
+    transform: scale(1.03);
+    /* Slight zoom */
+    background: var(--primary-color);
+    /* Change background */
+    color: white;
+    box-shadow: 6px 6px 0px rgba(155, 17, 30, 0.5);
+}
+
+/* Change Text Color on Hover */
+.spacer:hover h1 {
+    color: var(--background);
+    /* Change text color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🏆 Main Quiz Container */
+.quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    background: var(--background);
+    border: 3px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+/* 📝 Quiz Title */
+.quiz-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Raleway', serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* 🎧 Quiz Buttons */
+.quiz-button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effects */
+.quiz-button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* ✅ Feedback Messages */
+.feedback-message {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* 🎯 Correct Answer */
+.correct-answer {
+    color: green;
+}
+
+/* ❌ Incorrect Answer */
+.wrong-answer {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.frame {
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 20px;
+    background: url('https://www.transparenttextures.com/patterns/old-map.png'),
+                linear-gradient(135deg, #E1C699, #B89B72);
+    /* Aged paper texture with warm sepia tones */
+
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border: 5px solid #5D4037;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Courier New', monospace;
+}
+
+
+
+
+
+/* 🔊 Audio Sync Container */
+.audio-sync-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background: var(--background);
+    border: 3px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    text-align: left;
+    gap: 20px;
+}
+
+/* 🖼️ Image Styling */
+
+.sync-image-wrapper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    /* Hides any overflow from the image */
+}
+
+.sync-image {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #0A0E33;
+    object-fit: cover;
+    display: block;
+}
+
+.sync-figure {
+    text-align: center;
+    /* Centers the caption */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sync-image {
+    width: 180px;
+    /* Fixed width */
+    height: 220px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Ensures the image maintains proportions without stretching */
+    border: 3px solid #0A0E33;
+    /* Adds a vintage-styled border */
+    filter: sepia(40%) contrast(110%) saturate(80%);
+    /* Vintage filter effect */
+    border-radius: 5px;
+    /* Slight rounding for an old-photo feel */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Adds a subtle vintage-style shadow */
+}
+
+.image-caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #0A0E33;
+    /* Adjusted for readability */
+    font-family: 'Times New Roman', serif;
+    /* Classic serif font for a retro feel */
+}
+
+
+
+
+/* 📝 Text Styling */
+.content {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* ✨ Highlighted Word During Sync */
+.sync-audio span {
+    font-weight: bold;
+    padding: 2px 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sync-audio span.highlight {
+    background: var(--accent-color);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    padding: 2px 5px;
+    transition: background 0.2s ease-in-out;
+}
+
+/* 📌 Hover Effect */
+.sync-audio span:hover {
+    background: var(--secondary-color);
+    color: var(--background);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 📱 Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .story-image {
+        max-width: 90%;
+    }
+
+    .text-container {
+        font-size: 20px;
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .audio-image {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+/*
+    .flashcards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flashcard {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+*/
+    .matching-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .words-container, .definitions-container {
+        width: 100%;
+    }
+
+    .word-box, .definition-box {
+        width: 100%;
+    }
+
+    .audio-sync-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sync-image {
+        width: 150px;
+        height: 180px;
+    }
+
+    .quiz-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    .spacer {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
+
+/* 📺 Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .story-image {
+        max-width: 80%;
+    }
+
+    .text-container {
+        font-size: 22px;
+        max-width: 85%;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .audio-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .quiz-container {
+        max-width: 90%;
+        padding: 30px;
+    }
+
+    .audio-sync-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sync-image {
+        width: 160px;
+        height: 200px;
+    }
+
+    /*
+    .flashcards-container {
+        justify-content: center;
+    }
+
+    .flashcard {
+        width: 180px;
+        height: auto;
+    }
+*/
+    button {
+        width: 80%;
+    }
+}
+
+/* 💻 Larger Screens (1024px+) */
+@media (min-width: 1025px) {
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .quiz-container {
+        max-width: 800px;
+    }
+
+    .audio-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .flashcard {
+        width: 220px;
+        height: 250px;
+    }
+}

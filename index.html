@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mysterious Forest - Interactive</title>
+    <link rel="icon" type="image/jpg" href="number16.jpg">
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+    <h1>No. 16</h1>
+    <h2>Mass tourism</h2>
+
+    <img class="story-image" src="1.jpg" alt="Foggy Forest">
+    <div class="audio-text-pair">
+        <div class="text-container">
+            <span class="sentence" data-audio="1.wav" data-start="0.00" data-end="8.50">
+                Mass tourism has become, one of the most significant phenomena of the modern era,
+                bringing millions of visitors to popular destinations each year.
+            </span>
+
+            <span class="sentence" data-audio="1.wav" data-start="8.80" data-end="17.00">
+                While this industry generates significant economic benefits for local communities,
+                it also presents serious challenges.
+            </span>
+
+            <span class="sentence" data-audio="1.wav" data-start="17.50" data-end="26.50">
+                Overcrowding, rising living costs, and environmental degradation
+                are just a few issues cities face due to the influx of visitors.
+            </span>
+
+            <span class="sentence" data-audio="4.wav" data-start="20.00" data-end="26.00">
+                Authorities are increasingly implementing regulations such as
+                tourist caps, entry fees, and sustainable tourism policies to balance
+                the benefits and drawbacks of mass travel.
+            </span>
+        </div>
+    </div>
+
+
+
+    <h2>Click an image to play the sound</h2>
+
+    <div class="images-container">
+        <div class="container">
+            <figure>
+                <img src="image1.jpg" alt="Image 1" class="audio-image" data-audio="audio1.m4a">
+                <figcaption>Bustling Landmark</figcaption>
+            </figure>
+            <figure>
+                <img src="image2.jpeg" alt="Image 2" class="audio-image" data-audio="audio2.m4a">
+                <figcaption>Local Markets Alive</figcaption>
+            </figure>
+            <figure>
+                <img src="image3.jpg" alt="Image 3" class="audio-image" data-audio="audio3.m4a">
+                <figcaption>Too Many Travelers</figcaption>
+            </figure>
+            <figure>
+                <img src="image4.avif" alt="Image 4" class="audio-image" data-audio="audio4.m4a">
+                <figcaption>Tourism-Driven Inflation</figcaption>
+            </figure>
+            <figure>
+                <img src="image5.jpg" alt="Image 5" class="audio-image" data-audio="audio5.m4a">
+                <figcaption>Strained Infrastructure</figcaption>
+            </figure>
+        </div>
+    </div>
+
+
+
+    <h2>📖 Interactive Flashcards</h2>
+    <div class="flashcards-container">
+
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="front">Overcrowding</div>
+            <div class="back">Too many people in one place. <br> Example: "The city suffers from overcrowding during
+                the
+                summer."</div>
+        </div>
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="front">Sustainable Tourism</div>
+            <div class="back">Travel that does not harm the environment. <br> Example: "Eco-friendly hotels promote
+                sustainable tourism."</div>
+        </div>
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="front">Cultural Impact</div>
+            <div class="back">How tourism changes local traditions and customs. <br> Example: "Tourism can have both
+                positive and negative cultural impacts."</div>
+        </div>
+    </div>
+
+
+
+
+    <div class="frame">
+        <div class="audio-sync-container">
+            <figure class="sync-figure">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Illustration" class="sync-image" />
+                <figcaption class="image-caption">Alice</figcaption>
+            </figure>
+            <div class="content">
+                <p class="sync-audio" data-audio="alice.m4a" data-length="7.0">
+                    <span>I</span>
+                    <span>believe</span>
+                    <span>the</span>
+                    <span>rapid</span>
+                    <span>increase</span>
+                    <span>of</span>
+                    <!-- Silence added manually -->
+                    <span data-manual-start="2.45" data-manual-end="2.7">tourists</span>
+                    <span>is</span>
+                    <span>depleting</span>
+                    <span>natural</span>
+                    <!-- Silence added manually -->
+                    <span data-manual-start="4.5" data-manual-end="4.85">resources</span>
+                    <span>and</span>
+                    <span>causing</span>
+                    <span>irreversible</span>
+                    <span>environmental</span>
+                    <span>damage.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="audio-sync-container">
+            <figure class="sync-figure">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Illustration" class="sync-image" />
+                <figcaption class="image-caption">Nelson</figcaption>
+            </figure>
+            <div class="content">
+                <p class="sync-audio" data-audio="nelson.m4a" data-length="6.0">
+                    <span>Mass</span>
+                    <span>tourism</span>
+                    <span>is</span>
+                    <span>putting</span>
+                    <span>an</span>
+                    <span>unsustainable</span>
+                    <span>strain</span>
+                    <span>on</span>
+                    <span>local</span>
+                    <!-- Insert manual pause if needed -->
+                    <span data-manual-start="3.8" data-manual-end="4.1">infrastructure,</span>
+                    <span>making</span>
+                    <span>it</span>
+                    <span>hard</span>
+                    <span>for</span>
+                    <span>communities</span>
+                    <span>to</span>
+                    <span>cope.</span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="audio-sync-container">
+            <figure class="sync-figure">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Illustration" class="sync-image" />
+                <figcaption class="image-caption">Brian</figcaption>
+            </figure>
+            <div class="content">
+                <p class="sync-audio" data-audio="brian.m4a" data-length="7.6">
+                    <span>I've</span>
+                    <span>seen</span>
+                    <span>firsthand</span>
+                    <span>how</span>
+                    <span>mass</span>
+                    <span>tourism</span>
+                    <span>disrupts</span>
+                    <span>local</span>
+                    <span>economies,</span>
+                    <span>often</span>
+                    <span>pricing</span>
+                    <span>out</span>
+                    <span>the</span>
+                    <span>very</span>
+                    <span>residents</span>
+                    <span>who</span>
+                    <span>make</span>
+                    <span>these</span>
+                    <span>places</span>
+                    <span>unique.</span>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Styled Exercises Section -->
+    <div class="exercises-container">
+
+
+        <div class="spacer">
+            <h1>🏆 Exercises</h1>
+        </div>
+
+        <div class="quiz-container">
+            <h3>🏆 Word Matching Game</h3>
+            <div class="matching-container">
+
+                <!-- Words (Left Column) -->
+                <div class="words-container">
+                    <div class="word-box" draggable="true" data-match="2">Sustainable Tourism</div>
+                    <div class="word-box" draggable="true" data-match="1">Overcrowding</div>
+                    <div class="word-box" draggable="true" data-match="3">Cultural Impact</div>
+                </div>
+
+                <!-- Definitions (Right Column) -->
+                <div class="definitions-container">
+                    <div class="definition-box" data-answer="3">How tourism affects local traditions.</div>
+                    <div class="definition-box" data-answer="1">Too many people in one place.</div>
+                    <div class="definition-box" data-answer="2">Travel that does not harm the environment.</div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="quiz-container">
+            <!-- Exercise 1: Multiple Choice -->
+            <h3>Exercise 1: Multiple Choice</h3>
+
+            <p>1. What is mass tourism?</p>
+            <ul>
+                <li><input type="radio" name="q1" value="1"> A significant modern phenomenon that brings millions of
+                    visitors to popular destinations.</li>
+                <li><input type="radio" name="q1" value="0"> A form of tourism limited to small rural areas.</li>
+                <li><input type="radio" name="q1" value="0"> A type of travel only for luxury tourists.</li>
+                <li><input type="radio" name="q1" value="0"> A new form of tourism that discourages travel.</li>
+            </ul>
+
+            <p>2. What is one economic benefit of mass tourism?</p>
+            <ul>
+                <li><input type="radio" name="q2" value="0"> It reduces the number of businesses in an area.</li>
+                <li><input type="radio" name="q2" value="1"> It generates significant income for local communities.
+                </li>
+                <li><input type="radio" name="q2" value="0"> It leads to fewer job opportunities for residents.</li>
+                <li><input type="radio" name="q2" value="0"> It makes cities less attractive to visitors.</li>
+            </ul>
+
+            <p>3. Which of the following is a negative effect of mass tourism?</p>
+            <ul>
+                <li><input type="radio" name="q3" value="1"> Overcrowding and environmental degradation.</li>
+                <li><input type="radio" name="q3" value="0"> An increase in housing availability.</li>
+                <li><input type="radio" name="q3" value="0"> A decrease in travel costs for tourists.</li>
+                <li><input type="radio" name="q3" value="0"> A complete halt in tourism development.</li>
+            </ul>
+
+            <p>4. What measures are authorities taking to manage the effects of mass tourism?</p>
+            <ul>
+                <li><input type="radio" name="q4" value="1"> Implementing tourist caps, entry fees, and sustainable
+                    tourism
+                    policies.</li>
+                <li><input type="radio" name="q4" value="0"> Encouraging unlimited tourism without restrictions.
+                </li>
+                <li><input type="radio" name="q4" value="0"> Closing all major tourist attractions permanently.</li>
+                <li><input type="radio" name="q4" value="0"> Prohibiting any regulations on tourism.</li>
+            </ul>
+        </div>
+
+
+        <div class="quiz-container">
+            <!-- Exercise 2: Fill in the Blank -->
+            <h3>Exercise 2: Fill in the Blank</h3>
+
+            <p>1. Mass tourism is one of the most significant _______ of the modern era.</p>
+            <input type="text" id="q5" placeholder="Type your answer here">
+
+            <p>2. One major challenge of mass tourism is _______ due to the influx of visitors.</p>
+            <input type="text" id="q6" placeholder="Type your answer here">
+
+            <p>3. Authorities are implementing regulations such as tourist _______, entry fees, and sustainable
+                tourism
+                policies.</p>
+            <input type="text" id="q7" placeholder="Type your answer here">
+
+            <p>4. Mass tourism can lead to environmental _______ in popular destinations.</p>
+            <input type="text" id="q8" placeholder="Type your answer here">
+        </div>
+
+
+
+        <div class="quiz-container">
+            <!-- Exercise 3: True or False -->
+            <h3>Exercise 3: True or False</h3>
+
+            <p>1. Mass tourism only has negative effects and does not benefit local communities.</p>
+            <ul>
+                <li><input type="radio" name="q9" value="0"> True</li>
+                <li><input type="radio" name="q9" value="1"> False</li> <!-- Correct -->
+            </ul>
+
+            <p>2. Overcrowding and rising living costs are some of the challenges caused by mass tourism.</p>
+            <ul>
+                <li><input type="radio" name="q10" value="1"> True</li> <!-- Correct -->
+                <li><input type="radio" name="q10" value="0"> False</li>
+            </ul>
+
+            <p>3. Sustainable tourism policies aim to balance the benefits and drawbacks of mass travel.</p>
+            <ul>
+                <li><input type="radio" name="q11" value="1"> True</li> <!-- Correct -->
+                <li><input type="radio" name="q11" value="0"> False</li>
+            </ul>
+
+            <p>4. Authorities are encouraging unlimited tourism without any regulations.</p>
+            <ul>
+                <li><input type="radio" name="q12" value="0"> True</li>
+                <li><input type="radio" name="q12" value="1"> False</li> <!-- Correct -->
+            </ul>
+
+        </div>
+
+        <div class="quiz-container">
+            <h3>🎤 Pronunciation Quiz</h3>
+            <div id="app">
+                <!-- The quiz will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <button id="submitBtn">Submit Answers</button>
+    </div>
+
+
+
+    <!-- 
+    How to Add More Questions?
+    For multiple-choice & true/false:
+
+    Add a new <p> question inside the HTML.
+    Assign a unique name="qX" where X is a new number.
+    Add the correct answer inside correctAnswers in the JavaScript.
+
+    
+    For fill-in-the-blank:
+
+    Add a new <input> field in HTML.
+    Assign a unique id="qX" where X is a new number.
+    Add the correct answer inside fillInTheBlanks in the JavaScript.
+    -->
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
