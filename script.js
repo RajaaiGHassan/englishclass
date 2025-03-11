@@ -360,10 +360,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ✅ Vocabulary for English Learning
 const vocabulary = [
-    { word: "overcrowding", audio: "audio/overcrowding.mp3" },
-    { word: "sustainability", audio: "audio/sustainability.mp3" },
-    { word: "tourism", audio: "audio/tourism.mp3" },
-    { word: "degradation", audio: "audio/degradation.mp3" }
+    { word: "overcrowding", audio: "overcrowding.m4a" },
+    { word: "sustainability", audio: "sustainability.m4a" },
+    { word: "tourism", audio: "tourism.m4a" },
+    { word: "degradation", audio: "degradation.m4a" }
 ];
 
 let askedWords = [];
